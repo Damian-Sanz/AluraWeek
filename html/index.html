@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/popUps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>AluraWeek</title>
+
+</head>
+<body>
+
+    <p class="tituloAncla" id="tituloForJS">inicio</p>
+    
+    <header class="encabezadoTipoBarra">
+
+        <div class="contenedorEncabezado">
+
+            <div class="contenedorImgPerfil">
+                <img src="../img/perfilPrueba.jpg" alt="imagen del Usuario" class="imagenPerfil">
+            </div>
+    
+            <nav class="contenedorNav">
+    
+                <a class="contenedorItemsNavegacion" href="index.html">
+                    <img src="../img/iconos/dashboard.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Dashboard</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="productos.html">
+                    <img src="../img/iconos/productos.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Productos</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="cliente.html">
+                    <img src="../img/iconos/clientes.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Clientes</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="configuracion.html">
+                    <img src="../img/iconos/configuracion.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Configuraciones</span>
+                </a>
+
+                <div class="contenedorCerrarSesion">
+                    <img class="iconoCerrarSesion" src="../img/iconos/cerrarSesion.png" alt="">
+                    <span class="textoCerrarSesion">Cerrar Sesion</span>
+                </div>
+    
+            </nav>
+            
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="popUpVenta">
+
+            <div class="contenedor-popUp-Venta">
+                <img src="../img/iconos/iconoEquis.png" alt="" class="botonCerrar">
+                <div class="seccionElegirProducto">
+                    <h2 class="textoElegirProduco">Elegir producto</h2>
+                    <div class="contenedorProductos-aElegir">
+                        <input type="search" value="Buscar producto" class="inputBuscarProducto-aVender">
+                        <div class="productos-a-elegir" data-listaProductos>
+                        </div>
+                    </div>
+                </div>
+                <div class="seccionProductoElegido">
+
+                    <div class="contenedorGeneral-ProductosElegidos">
+                        <h2 class="tituloProductoElegido">Producto elegido</h2>
+                        <div class="infoProductoElegido">
+                            <button class="areaOpcionesProductosElegidos">   
+                                <select class="selectorProductoElegido">
+                                </select>
+                            </button>
+                            <span class="precioProductoElegido">
+                                <h2>Precio:</h2>
+                                <div class="contenedorPrecioPE">
+                                    <p>$</p>
+                                    <p class="precioNumEntero">00</p>
+                                    <p class="precioNumDecimales">.00</p>
+                                    <p>mxn</p>
+                                </div>
+                            </span>
+
+                            <div class="contenedorCantidadPE">
+                                <label for="cantidad">Cantidad:</label>
+                                <input id="cantidad" type="number" class="inputCantidadPE">
+                            </div>
+
+                            <span class="spanSubtotalPE">
+                                <h2>Subtotal:</h2>
+                                <div class="contenedorPrecioPE">
+                                    <p>$</p>
+                                    <p class="precioNumEntero" data-subTotal>00</p>
+                                    <p class="precioNumDecimales">.00</p>
+                                    <p>mxn</p>
+                                </div>
+                            </span>
+
+                            <button class="botonAddCarrito">
+                                <h2>Añadir</h2>
+                                <img src="../img/iconos/carritoCompras.png" alt="" class="iconoCarritoCompras">
+                            </button>
+
+                            <button class="botonAddCarrito">
+                                <h2>Eliminar</h2>
+                                <img src="../img/iconos/carritoCompras.png" alt="" class="iconoCarritoCompras">
+                            </button>
+
+                        </div>
+
+                        <span class="spanTotalPE">
+                            <h2 class="h2Total">Total:</h2>
+                            <div class="contenedorPrecioPE">
+                                <p>$</p>
+                                <p class="precioNumEntero" data-Total>00</p>
+                                <p class="precioNumDecimales">.00</p>
+                                <p>mxn</p>
+                            </div>
+                        </span>
+
+                        <button class="botonVentaHecha">
+                            <h2>Hecho</h2>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="dashboard">
+
+            <div class="areaPrincipalDashboard">
+
+                <div class="contenedorElementosInicio">
+                    <div class="contenedorTextosInicio">
+                        <h1 class="textoSaludo">¡Bienvenido!</h1>
+                        <span>Martes 30 de Abril del 2024</span>
+                    </div>
+                    <a href="">
+                        <img src="../img/iconos/notificacion.png" alt="" class="iconoNotificacion">
+                    </a>
+                </div>
+    
+                <button class="botonVenta">
+                    <img src="../img/iconos/iconoMas.png" alt="icono Carro de Compras" class="iconoCarritoCompras">
+                    <span class="textoBotonVenta">Realizar venta</span>
+                </button>
+                
+                <div class="contenedorBotonesSecundarios">
+
+                    <button class="botonesSecundarios active" id="botonRgeistrarProducto" data-Formulario="Registrar-producto">
+                        <img src="../img/iconos/registrarProducto.png" alt="icono de producto" class="iconosSecudarios">
+                        <span class="spanBototnes">Registrar <br>producto</span>
+                    </button>
+        
+                    <button class="botonesSecundarios" data-Formulario="Registrar-Cliente">
+                        <img src="../img/iconos/registrarCliente.png" alt="icono de Cliente" class="iconosSecudarios">
+                        <span class="spanBototnes">Registrar <br>Cliente</span>
+                    </button>
+        
+                    <button class="botonesSecundarios" data-Formulario="Registrar-empleado">
+                        <img src="../img/iconos/registrarEmpleado.png" alt="icono empleado" class="iconosSecudarios">
+                        <span class="spanBototnes">Registrar <br>empleado</span>
+                    </button>
+        
+                    <button class="botonesSecundarios" data-Formulario="Realizar-cotizacion">
+                        <img src="../img/iconos/realizarCotizacion.png" alt="icono cotizacion" class="iconosSecudarios">
+                        <span class="spanBototnes">Realizar <br>cotizacion</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="areaSecundariaDashboard">
+                <form class="formularioDashboard" data-envioFormulario>
+
+                    <h2 class="tituloFormulario">Registrar producto</h2>
+    
+                    <fieldset class="contenedorInputsForm">
+            
+                        <div class="contenedorInputTextForm">
+                            <input type="text" placeholder="Nombre" required class="inputsTypeTextForm" data-titulo maxlength="17">
+                            <input type="number" step="0.01" min="0" placeholder="Precio" required class="inputsTypeTextForm" data-precio>
+                            <input type="number" placeholder="Existencia" required class="inputsTypeTextForm" data-existencia>
+                            <select class="inputsTypeTextForm" data-categoria id="opcionesCategoriasEditProducto">
+                            <option class="opcionesGenero" >Categoria</option>
+                            </select>
+                            <select class="inputsTypeTextForm" data-genero>
+                                <option class="opcionesGenero">Genero</option>
+                                <option class="opcionesGenero">Hombre</option>
+                                <option class="opcionesGenero">Mujer</option>
+                                <option class="opcionesGenero">Ambos</option>
+                            </select>
+                        </div>
+            
+                        <div class="inputsFinalesFotoFoto">
+                            <input type="url" class="inputImagenProducto" placeholder="URL de la imagen" data-imagen>
+                        </div>
+            
+                        <input type="submit" class="inputsFinales">
+            
+                    </fieldset>
+
+                </form>
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <script src="../javaScript/inicio/formularios.js" type="module"></script>
+    
+</body>
+</html>

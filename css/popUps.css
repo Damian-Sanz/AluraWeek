@@ -1,0 +1,536 @@
+main{
+    font-family: Montserrat;
+}
+
+.popUpVenta{
+    display: none;
+    z-index: 99;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff2f;
+    backdrop-filter: blur(8px);
+}
+
+.popUpVenta.active{
+    display: block;
+}
+
+.contenedor-popUp-Venta{
+    display: flex;
+    background: #4C728F;
+    border-radius: 100px;
+    border: solid 20px #5F88A7;
+    width: 80%;
+    height: 90%;
+    position: relative;
+    margin: 1.2% auto;
+}
+
+.botonCerrar{
+    position: absolute;
+    width: 30px;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.seccionElegirProducto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 2em;
+}
+
+.textoElegirProduco{
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contenedorProductos-aElegir{
+    position: relative;
+    border: solid 5px #fff;
+    border-radius: 50px;
+    height: 90%;
+}
+
+.inputBuscarProducto-aVender{
+    font-size: 22px;
+    margin: 1em 0 1em 1em;
+    background: none;
+    color: #fff;
+    border: solid 3px #fff;
+    border-radius: 40px;
+    padding: 0.5em;
+}
+
+.inputBuscarProducto-aVender:focus{
+    outline-style: none;
+}
+
+.productos-a-elegir{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    overflow: auto;
+    justify-content: center;
+}
+
+.cardProducto.select{
+    width: 45%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cardProducto.select:hover{
+    scale: 0.95;
+}
+
+.cardProducto.elegido {
+    scale: 0.95;
+    box-shadow: 5px 5px 0 0 #fff;
+}
+
+
+.contenedorIconoEditar.disabled{
+    display: none;
+}
+
+.seccionProductoElegido{
+    width: 50%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedorGeneral-ProductosElegidos{
+    background: #E0E0E0;
+    border-radius: 50px;
+    padding: 1em 2em;
+}
+
+.tituloProductoElegido{
+    font-size: 22px;
+    text-align: center;
+}
+
+.infoProductoElegido{
+    border: solid 3px #000;
+    border-radius: 20px;
+    margin-top: 0.75em;
+}
+
+.areaOpcionesProductosElegidos{
+    border: solid 3px #000;
+    width: 95%;
+    border-radius: 20px;
+    position: relative;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.selectorProductoElegido{
+    background: none;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.selectorProductoElegido:focus{
+    outline-style: none;
+}
+
+.precioProductoElegido{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    font-size: 25px;
+}
+
+.contenedorPrecioPE{
+    display: flex;
+}
+
+.precioNumEntero{
+    font-weight: 700;
+}
+
+.precioNumDecimales{
+    font-size: 20px;
+    align-content: end;
+}
+
+.contenedorCantidadPE{
+    display: flex;
+    padding: 0.5em;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.inputCantidadPE{
+    background: none;
+    border-bottom: solid 3px #000;
+    text-align:right;
+    width: 50%;
+}
+
+.inputCantidadPE:focus{
+    outline-style: none;
+}
+
+.spanSubtotalPE{
+    display: flex;
+    padding: 0.5em;
+    font-size: 25px;
+    justify-content: space-between;
+    border: solid 3px #000;
+    border-radius: 50px;
+    width: 90%;
+    margin: 0.5em auto;
+}
+
+.botonAddCarrito{
+    background: #9E9E9E;
+    display: flex;
+    width: 95%;
+    margin: 0.5em auto;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    justify-content: center;
+    padding: 0.4em;
+    gap: 20px;
+    align-items:center;
+    cursor: pointer;
+}
+
+.botonAddCarrito:hover{
+    background: #b9b9b9;
+}
+
+.spanTotalPE{
+    display: flex;
+    padding: 1em;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.h2Total{
+    font-weight: 800;
+}
+
+.botonVentaHecha{
+    background: #6472A3;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.botonVentaHecha:hover{
+    background: #7c88b1;
+}
+
+/* Estilos pagina de Productos */
+
+.contenedor-fondoDesenfocado-editarProducto{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    display: flex;
+    align-items:center ;
+    display: none;
+}
+
+.contenedor-fondoDesenfocado-editarProducto.select{
+    display:flex;
+}
+
+.contenedor2-popUp-EditarProducto{
+    background: #A7ABD0;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorEditarImg{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.imagenProducto.edit{
+    width: 350px;
+    border-radius: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.contenedorFormEditarImagen{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.labelCambiarImagen{
+    text-align: center;
+    font-size: 33px;
+    color: #fff;
+}
+
+.inputUrl{
+    background: none;
+    border: solid 3px #fff;
+    border-radius: 30px;
+    padding: 1em;
+    font-size: 18px;
+    color: #fff;
+}
+
+.inputUrl::placeholder{
+    color: #fff;
+    opacity: 0.7;
+}
+
+.inputUrl:focus, .inputNuevosValores:focus, .selector-editProducto:focus{
+    outline-style: none;
+}
+
+.inputAplicarNuevaImg{
+    background: #D9D9D9;
+    padding: 0.5em;
+    border-radius: 50px;
+    font-size: 33px;
+    font-weight: 1000;
+    color: #26263F;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.inputAplicarNuevaImg:hover, .botonGuardar:hover, .botonCancelar:hover{
+    font-size: 34px;
+}
+
+.contenedorEditarDatosProducto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.h2DatosProducto{
+    font-size: 33px;
+    font-weight: 750;
+    color: #fff;
+}
+
+.formNuevosDatosProducto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenedorSpanInfo-aEditar{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contenedorInfo-aEditar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parrafoInfo-aEditar{
+    font-size: 25px;
+    color: #fff;
+}
+
+.contenedorPrecio{
+    display: flex;
+    color: #fff;
+    font-size: 25px;
+    gap: 5px;
+}
+
+.precioProductoActual{
+    font-weight: 600;
+    color: #fff;
+    font-size: 25px;
+}
+
+.inputNuevosValores{
+    background: none;
+    border: solid 3px #fff;
+    border-radius: 50px;
+    padding: 0.5em;
+    font-size: 22px;
+    color: #fff;
+}
+
+.inputNuevosValores::placeholder{
+    color: #fff;
+}
+
+.contenedorSpanSelectivos{
+    display: flex;
+    border: solid 3px #fff;
+    border-radius: 50px;
+    justify-content: space-around;
+    padding: 0.5em;
+    font-size: 25px;
+    color: #fff;
+}
+
+.selector-editProducto{
+    background: none;
+}
+
+.contenedorBotonesGuardarCancelar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+.botonGuardar{
+    background: #343758;
+    padding: 0.5em 1em;
+    font-size: 33px;
+    font-weight: 1000;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+    width: 60%;
+}
+
+.botonCancelar{
+    background: #8388C1;
+    padding: 0.5em 1em;
+    font-size: 28px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+    width: 35%;
+    overflow:hidden;
+}
+
+.contenedor-fondoDesenfocado-eliminarProducto{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+.contenedor-fondoDesenfocado-eliminarProducto.display{
+    display: none;
+}
+
+.divCentralizado{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.imgFondoAdvertencia{
+    width: 30em;
+    position: relative;
+}
+
+.contenedorTextoAdvertencia{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorTA2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.botonCancelarEliminacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-weight: 800;
+    font-size: 30px;
+    background: #7c88b1;
+    border-radius: 50px;
+    padding: 0 0.2em;
+    cursor: pointer;
+}
+
+.primeraLineaAdvertencia{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+}
+
+.segundaLineaAdvertencia{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.btoonAceptarAdvertencia{
+    background: #D9D9D9;
+    border-radius: 50px;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #26263F;
+    padding: 0.35em 1em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btoonAceptarAdvertencia:hover{
+    font-size: 34px;
+}

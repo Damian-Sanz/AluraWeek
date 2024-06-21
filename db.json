@@ -1,0 +1,328 @@
+{
+  "productos": [
+    {
+      "id": "10",
+      "titulo": "Sudadera Coffe",
+      "precio": "899",
+      "categoria": "Ropa",
+      "genero": "Hombre",
+      "existencia": "4",
+      "imagen": "https://media.revistagq.com/photos/652cf49d080732ebcacdf41f/4:3/w_4479,h_3359,c_limit/sudaderas%20de%20marca%20hombre.jpg"
+    },
+    {
+      "id": "12",
+      "titulo": "Sedadera Beige",
+      "precio": "650",
+      "categoria": "Sudadera",
+      "genero": "Hombre",
+      "existencia": "0",
+      "imagen": "https://media.gq.com.mx/photos/609084d2bc8fb85784f7378f/16:9/w_2560%2Cc_limit/Sudaderas%2520de%2520hombre%25206.jpg"
+    },
+    {
+      "id": "13",
+      "titulo": "Bomber Rojo",
+      "precio": 1450,
+      "categoria": "Ropa",
+      "genero": "Hombre",
+      "existencia": 4,
+      "imagen": "https://www.playerasymas.com.mx/11831-large_default/c0702-sudadera-capucha-cangurera-y-cierre-adulto.jpg"
+    },
+    {
+      "id": "152972",
+      "titulo": "Pans Cuadro Gris",
+      "precio": "350",
+      "categoria": "Ropa",
+      "genero": "Mujer",
+      "existencia": "6",
+      "imagen": "https://i.pinimg.com/736x/6b/5b/c7/6b5bc73afc48e65b973b9a2f1ada88d2.jpg"
+    },
+    {
+      "id": "834869",
+      "titulo": "Tenis Nike BV",
+      "precio": 1499,
+      "categoria": "calzado",
+      "genero": "Ambos",
+      "existencia": 3,
+      "imagen": "https://i.pinimg.com/564x/67/d1/b4/67d1b462f204ed12a3b1ba91e662a457.jpg"
+    },
+    {
+      "id": "994687",
+      "titulo": "Tenis DG blanco",
+      "precio": 899,
+      "categoria": "calzado",
+      "genero": "Ambos",
+      "existencia": 5,
+      "imagen": "https://i.pinimg.com/564x/cd/a3/47/cda347a11b18fdb1123673e47314883b.jpg"
+    },
+    {
+      "id": "785354",
+      "titulo": "Tenis Black Air",
+      "precio": 599,
+      "categoria": "calzado",
+      "genero": "Hombre",
+      "existencia": 8,
+      "imagen": "https://i.pinimg.com/736x/2d/d6/80/2dd680250794f45cf5e7af42b3319dc6.jpg"
+    },
+    {
+      "id": "496081",
+      "titulo": "Tenis Vans Negros",
+      "precio": 899,
+      "categoria": "calzado",
+      "genero": "Ambos",
+      "existencia": 4,
+      "imagen": "https://i.pinimg.com/564x/5a/c0/ba/5ac0ba8da329e2ed368f7a24b159158a.jpg"
+    },
+    {
+      "id": "959998",
+      "titulo": "Tenis Blur JDL",
+      "precio": 999,
+      "categoria": "calzado",
+      "genero": "Mujer",
+      "existencia": 2,
+      "imagen": "https://i.pinimg.com/564x/27/bd/5e/27bd5e83bdc1d1c4a5b8461cb9e19a79.jpg"
+    },
+    {
+      "id": "218368",
+      "titulo": "Tenis Stret Coffe",
+      "precio": 899,
+      "categoria": "calzado",
+      "genero": "Hombre",
+      "existencia": 5,
+      "imagen": "https://i.pinimg.com/736x/29/93/ea/2993ea9ea7db030e8ad49f83232598ee.jpg"
+    },
+    {
+      "id": "34284",
+      "titulo": "Tenis Blanco Z",
+      "precio": 499,
+      "categoria": "calzado",
+      "genero": "Hombre",
+      "existencia": 6,
+      "imagen": "https://i.pinimg.com/564x/31/06/d7/3106d7390ca4814f4fd28015afc434b0.jpg"
+    },
+    {
+      "id": "652804",
+      "titulo": "Gorra AzulM Forgo",
+      "precio": 689,
+      "categoria": "Gorras",
+      "genero": "Hombre",
+      "existencia": 4,
+      "imagen": "https://i.pinimg.com/564x/ae/d1/0b/aed10b6d2a0a0411893759b348ec5059.jpg"
+    },
+    {
+      "id": "959924",
+      "titulo": "Gorra Forest Bg",
+      "precio": 899,
+      "categoria": "Gorras",
+      "genero": "Hombre",
+      "existencia": 6,
+      "imagen": "https://i.pinimg.com/564x/1a/43/27/1a4327b1455bb789bc0c2b00a601fb93.jpg"
+    },
+    {
+      "id": "4838",
+      "titulo": "Gorra Black Brok",
+      "precio": 899,
+      "categoria": "Gorras",
+      "genero": "Ambos",
+      "existencia": 7,
+      "imagen": "https://i.pinimg.com/564x/96/26/bc/9626bc25af7eb80d1421c1489981212f.jpg"
+    },
+    {
+      "id": "78249",
+      "titulo": "Gorras Basicas CB",
+      "precio": 555,
+      "categoria": "Gorras",
+      "genero": "Genero",
+      "existencia": 8,
+      "imagen": "https://i.pinimg.com/564x/a9/39/7e/a9397e9c58228db8f82a639fdb8ffc4b.jpg"
+    },
+    {
+      "id": "792997",
+      "titulo": "Gorra Gallo Negro",
+      "precio": 800,
+      "categoria": "Gorras",
+      "genero": "Hombre",
+      "existencia": 6,
+      "imagen": "https://i.pinimg.com/564x/e9/a0/f6/e9a0f6a12a9ea51edbfb488e4fcfb50b.jpg"
+    },
+    {
+      "id": "842037",
+      "titulo": "Sudadera Termica",
+      "precio": 850,
+      "categoria": "Sudadera",
+      "genero": "Hombre",
+      "existencia": 5,
+      "imagen": "https://i.pinimg.com/564x/7f/e4/bb/7fe4bbd1b30e83a8ec998588571f9674.jpg"
+    },
+    {
+      "id": "191813",
+      "titulo": "Sudadera Otso",
+      "precio": 560,
+      "categoria": "Sudadera",
+      "genero": "Hombre",
+      "existencia": 2,
+      "imagen": "https://i.pinimg.com/564x/e1/27/ce/e127cef1ca5c9b538c86c19671fabd5b.jpg"
+    },
+    {
+      "id": "714616",
+      "titulo": "Sudadera Shedron",
+      "precio": 899,
+      "categoria": "Sudadera",
+      "genero": "Hombre",
+      "existencia": 3,
+      "imagen": "https://i.pinimg.com/564x/15/6c/f1/156cf1c21880ebbb114f17931df9f113.jpg"
+    },
+    {
+      "id": "182508",
+      "titulo": "Sudadera Mundial",
+      "precio": 799,
+      "categoria": "Sudadera",
+      "genero": "Mujer",
+      "existencia": 4,
+      "imagen": "https://i.pinimg.com/736x/aa/91/4f/aa914fe4f2186c5d64ed38446973af32.jpg"
+    },
+    {
+      "id": "795633",
+      "titulo": "Set Reloj Pulsera",
+      "precio": 899,
+      "categoria": "Accesorios",
+      "genero": "Hombre",
+      "existencia": 6,
+      "imagen": "https://i.pinimg.com/564x/54/83/c8/5483c817df7a83f49934bfbc6f4d7eed.jpg"
+    },
+    {
+      "id": "181416",
+      "titulo": "Pulsera Pluma",
+      "precio": 399,
+      "categoria": "Accesorios",
+      "genero": "Hombre",
+      "existencia": 5,
+      "imagen": "https://i.pinimg.com/564x/62/75/40/627540907ed047f16c10935b91a75b62.jpg"
+    }
+  ],
+  "clientes": [
+    {
+      "nombre": "Pedro Damian Perez Sanchez",
+      "telefono": 9631702734,
+      "correo": "damiansanchez0110@gmail.com",
+      "fechaNacimiento": "26/09/2000",
+      "imagen": "https://scontent.ftgz3-1.fna.fbcdn.net/v/t39.30808-1/355991728_1120001078920199_3941655231564117059_n.jpg?stp=cp0_dst-jpg_p74x74&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ccIOlJT9fj0Q7kNvgHQSw-v&_nc_ht=scontent.ftgz3-1.fna&oh=00_AYDTeCMDQP8OVyZtPOnf0lsNa8yQNlBVrNeprPolrK3XlQ&oe=666FCC58",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Papichulo 2000",
+      "telefono": "9631594892",
+      "correo": "elpapichulo@2000.com",
+      "fechaNacimiento": "1999-09-09",
+      "imagen": "https://www.cervantesvirtual.com/portadas/070/0708086/Cover.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "El Rey Salomon V",
+      "telefono": "9635559966",
+      "correo": "ELREYV@GMAIL.COM",
+      "fechaNacimiento": "1654-06-01",
+      "imagen": "https://media.licdn.com/dms/image/D4E12AQHStIFtwtg2kQ/article-cover_image-shrink_600_2000/0/1668700245945?e=2147483647&v=beta&t=yaMfxAG2L-9lEPTznkjdJcjFQbXYWS2TCUOvcU5TtAQ"
+    },
+    {
+      "id": "4",
+      "nombre": "Marck Zuquerberg",
+      "telefono": 982376300,
+      "correo": "marck@face.com",
+      "fechaNacimiento": "1990-02-09",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
+    },
+    {
+      "id": "1",
+      "nombre": "Elon Reeve Musk",
+      "telefono": 9876543210,
+      "correo": "elon@musk.com",
+      "fechaNacimiento": "1971-07-28",
+      "imagen": "https://cdn.urbantecno.com/urbantecno/s/2023-01-05-11-27-elon-musk.png"
+    },
+    {
+      "id": "1",
+      "nombre": "Vladímir Vladímirovich Putin",
+      "telefono": 6543219870,
+      "correo": "vladimir@putin.com",
+      "fechaNacimiento": "1952-10-07",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29.jpg/250px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29.jpg"
+    },
+    {
+      "id": "1",
+      "nombre": "Edgar Eli Galileo Montijo",
+      "telefono": 9631593146,
+      "correo": "eeegdar@gmail.com",
+      "fechaNacimiento": "1995-03-15",
+      "imagen": "https://www.buscabiografias.com/img/people/Carlos_I_1500.jpg"
+    }
+  ],
+  "empleados": [
+    {
+      "nombre": "Pedro Damian Perez Sanchez",
+      "telefono": 9631702734,
+      "correo": "damiansanchez0110@gmail.com",
+      "domicilio": "12va calle sur pnt 21, comitan, chis, mx.",
+      "fechaNacimiento": "26/09/2000",
+      "imagen": "https://scontent.ftgz3-1.fna.fbcdn.net/v/t39.30808-6/355991728_1120001078920199_3941655231564117059_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=TiuE01CyhagQ7kNvgE_S1tQ&_nc_ht=scontent.ftgz3-1.fna&oh=00_AYDM_gyOwaFTvUbKG4s-QD6KtZO2sOUMR_S0nkE_rtxgIA&oe=664D7A96",
+      "id": "1"
+    },
+    {
+      "id": "968660",
+      "nombre": "Andres Manuel Lopez Obrador",
+      "telefono": "9631594578",
+      "correo": "manuel@elpresi.com",
+      "domicilio": "palenque, chiapas.",
+      "fechaNacimiento": "1953-09-13",
+      "imagen": "https://www.es.amnesty.org/fileadmin/noticias/257275.jpg"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nombreCategoria": "calzado"
+    },
+    {
+      "id": "2",
+      "nombreCategoria": "Ropa"
+    },
+    {
+      "id": "3",
+      "nombreCategoria": "Accesorios"
+    },
+    {
+      "id": "4",
+      "nombreCategoria": "Gorras"
+    },
+    {
+      "id": "5",
+      "nombreCategoria": "Sudadera"
+    },
+    {
+      "id": "673041",
+      "nombreCategoria": "Prueba"
+    },
+    {
+      "id": "647036",
+      "nombreCategoria": "Prueba"
+    },
+    {
+      "id": "619126",
+      "nombreCategoria": "Prueba"
+    }
+  ],
+  "generos": [
+    {
+      "id": "1",
+      "tipo": "Hombre"
+    },
+    {
+      "id": "2",
+      "tipo": "Mujer"
+    },
+    {
+      "id": "3",
+      "tipo": "Ambos"
+    }
+  ]
+}

@@ -1,0 +1,1272 @@
+body {
+    font-family: Montserrat;
+    background: #3A3C4D;
+}
+
+.tituloAncla{
+    display: none;
+}
+
+.encabezadoTipoBarra {
+    background: #3A3C4D;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    z-index: 1;
+}
+
+.contenedorEncabezado {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contenedorImgPerfil {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.imagenPerfil {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contenedorNav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.contenedorItemsNavegacion {
+    display: flex;
+    align-items: center;
+}
+
+.iconoNavegacion,
+.iconoCerrarSesion {
+    width: 22px;
+    padding-right: 0.5em;
+}
+
+.spanNavegacion,
+.textoCerrarSesion {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contenedorCerrarSesion {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding-top: 5em;
+}
+
+main {
+    display: flex;
+    justify-content: right;
+}
+
+.dashboard {
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    background: #fff;
+    width: 83%;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    display: flex;
+}
+
+.areaPrincipalDashboard {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.contenedorElementosInicio {
+    padding: 2.5em 3em 2em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textoSaludo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #3A3C4C;
+}
+
+.iconoNotificacion {
+    width: 30px;
+}
+
+.botonVenta {
+    width: 80%;
+    height: 80px;
+    background: #404466;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.iconoCarritoCompras {
+    width: 8%;
+}
+
+.textoBotonVenta {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.botonVenta:hover {
+    transition: all 0.3s;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.75);
+}
+
+.contenedorBotonesSecundarios {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.botonesSecundarios {
+    width: 200px;
+    height: 200px;
+    background: #ACB7E0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botonesSecundarios:hover {
+    background: #C3C3C3;
+}
+
+.botonesSecundarios.active {
+    background: #C3C3C3;
+}
+
+.iconosSecudarios {
+    width: 40%;
+    padding: 1em;
+}
+
+.spanBototnes {
+    font-size: 23px;
+    font-weight: 750;
+    text-transform: uppercase;
+    color: #404466;
+}
+
+.areaSecundariaDashboard {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.formularioDashboard {
+    width: 80%;
+    height: 95%;
+    background: #386383;
+    border-radius: 80px;
+    margin: auto;
+    overflow:auto;
+}
+
+.tituloFormulario {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.contenedorInputsForm {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+.contenedorInputTextForm {
+    background: linear-gradient(45deg, #637CAC, #D7DFF5);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 50px;
+    padding: 2em;
+}
+
+.inputsTypeTextForm {
+    border: solid 3px #fff;
+    border-radius: 30px;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 0.75em;
+}
+
+.inputsTypeTextForm::placeholder {
+    color: #fff;
+}
+
+.inputsTypeTextForm:focus {
+    outline-style: none;
+}
+
+.botonProductosPresupuesto{
+    border: solid 3px #fff;
+    border-radius: 30px;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 0.75em;
+    display: flex;
+    cursor: pointer;
+}
+
+.opcionesGenero {
+    background: #283565;
+    border-radius: 40px;
+}
+
+.inputsFinales {
+    margin-top: 0.3em;
+    border-radius: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    background: #283565;
+    padding: 0.4em;
+    cursor: pointer;
+}
+
+.inputsFinal1 {
+    margin-top: 0.3em;
+    border-radius: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    background: #283565;
+    padding: 0.4em;
+    cursor: pointer;
+}
+
+.inputsFinalesFotoFoto {
+    margin-top: 0.6em;
+    display: flex;
+    padding: 0.8em 0;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #fff;
+    background: #283565;
+}
+
+.inputImagenProducto {
+    background: none;
+    width: 85%;
+    border: solid 2px #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0.6em;
+}
+
+.inputImagenProducto::placeholder{
+    color: #fff;
+}
+
+.inputImagenProducto:focus{
+    outline-style: none;
+}
+
+
+/* Estilos para Pagina de Productos */
+
+.productos {
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    background: #fff;
+    width: 83%;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezadoProductos {
+    height: 20%;
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.contenedorBuscadorProductos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inputSearch {
+    background: none;
+    font-size: 35px;
+    font-weight: 700;
+    color: #3A3C4C;
+    border-radius: 30px;
+    padding: 0.4em;
+}
+
+.contendorFechaNotificacion {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.contenedorBotonesFiltro {
+    display: flex;
+    padding-top: 1.5em;
+    width: fit-content;
+    gap: 20px;
+}
+
+.botonesFiltro {
+    display: flex;
+    background: #3A3C4C;
+    border-radius: 30px;
+    padding: 0.7em 1em;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.titulosFiltro {
+    font-size: 20px;
+    color: #fff;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.contenedorOpciobes {
+    background: none;
+    color: #fff;
+}
+
+.opcionesFiltro {
+    background: #3A3C4C;
+}
+
+.contenedorProductos {
+    overflow: auto;
+    height: 65%;
+    border-bottom-left-radius: 50px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cardProducto {
+    border-radius: 50px;
+    width: fit-content;
+    background: #A7ABD0;
+    width: 20%;
+    height: 65%;
+    box-shadow: 0px 0px 15px #00000042;
+}
+
+.cardProducto.filtro{
+    display: none;
+}
+
+.contenedorImagenProducto {
+    height: 240px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow:hidden;
+    position: relative;
+}
+
+.contenedorImagenProducto img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+}
+
+.contenedorInfoProducto {
+    display: flex;
+    padding: 2em 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nombreProducto {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+}
+
+.precioProducto {
+    color: #fff;
+}
+
+.botonEditarProducto:hover {
+    background: #727bbb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contenedorIconoEditar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.iconoEditar {
+    width: 30px;
+}
+
+/* Estilos Cliente */
+
+.clientes {
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    background: #fff;
+    width: 83%;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorClientes {
+    overflow: auto;
+    position: relative;
+    top: -60px;
+    height: 110%;
+    border-bottom-left-radius: 50px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contenedorCards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardCliente {
+    background: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 1em 3em;
+    justify-content:space-around;
+    width: 70%;
+}
+
+.cardCliente.filtro{
+    display: none;
+}
+
+.contenedorImagenCliente {
+    width: 150px;   
+    height: 150px;
+    overflow: hidden; 
+    position: relative;
+    border-radius: 50%;
+}
+
+.contenedorImagenCliente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+.contenedorInfoCliente {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nombreCliente {
+    font-size: 20px;
+    font-weight: 800;
+    color: #323338;
+}
+
+.iconoEditarCliente {
+    width: 50px;
+}
+
+/* Estilos Configuracion */
+
+.contenedorTotalConfiguracion {
+    height: 76%;
+    border-bottom-left-radius: 50px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+    display: flex;
+}
+
+.contenedorPrincipalConfiguracion {
+    background: #3A3C4C;
+    width: 100%;
+    border-radius: 60px;
+}
+
+.encabezadoConfiguraciones {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.botonesEncabezadoConfiguracion {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 1em;
+}
+
+.botonesConfiguraciones {
+    background: #D9D9D9;
+    border-radius: 50px;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: 800;
+    color: #3A3C4C;
+}
+
+.botonesConfiguraciones:hover {
+    background: #8C8C8C;
+}
+
+.contenedorConfiguracion {
+    background: #696E96;
+    width: 96%;
+    height: 78%;
+    margin: 1em auto 0 auto;
+    border-radius: 50px;
+    overflow: auto;
+}
+
+.contenedorInputBotones {
+    padding: 2em;
+}
+
+.inputNombreCategoria {
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    border-bottom: solid 3px #fff;
+    width: 50%;
+    padding: 0 0 0.5em 0;
+}
+
+.inputNombreCategoria::placeholder{
+    color: #fff;
+}
+
+.inputNombreCategoria:focus{
+    outline-style: none;
+}
+
+.contenedorBotonesCrearAyuda {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botonCrear {
+    background: #6FB8E1;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconosBotonesCrearAyuda {
+    width: 20px;
+}
+
+.botonAyuda {
+    background: #86B6D1;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0.5em;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contenedorCategoriasCreadas {
+    padding: 2em;
+}
+
+.textoCategorias {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.contenedorCategoriasBoton {
+    position: relative;
+    border: solid 3px #fff;
+    border-radius: 20px;
+    margin-top: 1em;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1em;
+    height: 130px;
+}
+
+.botonCategoria {
+    background: #D9D9D9;
+    padding: 0.5em;
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+    align-items: center;
+    color: #3A3C4C;
+    height: 50px;
+}
+
+.iconoEliminarCategoria {
+    width: 20px;
+}
+
+/* media para smartphones */
+
+@media only screen and (max-width: 450px) {
+
+    /* Barra de Navegacion */
+    
+    .encabezadoTipoBarra {
+        background: #3A3C4D;
+        position: fixed;
+        width: 100%;
+        height: 8%;
+        display: flex;
+        flex-direction: unset;
+        padding: 1em 0;
+        z-index: 99;
+        top: unset;
+        bottom: 0;
+    }
+
+    .contenedorEncabezado {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction:unset;
+        justify-content: space-between;
+        overflow-y: auto;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .contenedorImgPerfil {
+        position:unset;
+        width: 10%;
+        margin: 0;
+    }
+    
+    .imagenPerfil {
+        position: relative;
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .contenedorNav {
+        display: flex;
+        flex-direction: unset;
+        gap: 30px;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 0;
+    }
+    
+    .contenedorItemsNavegacion {
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .iconoNavegacion,
+    .iconoCerrarSesion {
+        width: 20px;
+        padding-right: 0;
+    }
+    
+    .spanNavegacion,
+    .textoCerrarSesion {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    .contenedorCerrarSesion {
+        display: none;
+    }
+
+    /* Main de Inicio */
+
+    main {
+        display: flex;
+        justify-content:center;
+        z-index: 999;
+        background:#3A3C4D;
+    }
+    
+    .dashboard {
+        position: fixed;
+        z-index: 1000;
+        height: 90.5%;
+        background: #fff;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+    }
+    
+    .areaPrincipalDashboard {
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+    }
+    
+    .contenedorElementosInicio {
+        padding: 2em 3em 2em 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .textoSaludo {
+        font-size: 30px;
+        font-weight: 700;
+        color: #3A3C4C;
+    }
+    
+    .iconoNotificacion {
+        width: 30px;
+    }
+    
+    .botonVenta {
+        width: 80%;
+        height: 100px;
+        background: #404466;
+        margin: 0 auto;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .textoBotonVenta {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .contenedorBotonesSecundarios {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2em 0 0em 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        gap: 15px;
+    }
+    
+    .botonesSecundarios {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .botonesSecundarios:hover {
+        background: #C3C3C3;
+    }
+    
+    .botonesSecundarios.active {
+        background: #C3C3C3;
+    }
+    
+    .spanBototnes {
+        font-size: 18px;
+        font-weight: 750;
+        text-transform: uppercase;
+        color: #404466;
+    }
+    
+    .areaSecundariaDashboard {
+        width: 100%;
+    }
+    
+    .formularioDashboard {
+        width: 90%;
+        height:max-content;
+        margin: 3em 1em 1em 1em;
+        border-radius: 50px;
+        overflow:unset;
+    }
+    
+    .tituloFormulario {
+        font-size: 20px;
+    }
+    
+    .contenedorInputTextForm {
+        gap: 20px;
+        border-radius: 30px;
+        padding: 2em;
+    }
+    
+    .inputsTypeTextForm {
+        font-size: 18px;
+    }
+    
+    .opcionesGenero {
+        background: #283565;
+        border-radius: 40px;
+    }
+    
+    .inputsFinales {
+        margin-top: 0.4em;
+    }
+    
+    .inputsFinal1 {
+        margin-top: 0.5em;
+    }
+    
+    .inputsFinalesFotoFoto {
+        margin-top: 1em;
+    }
+
+    /* Productos */
+
+    .productos {
+        position: fixed;
+        z-index: 99;
+        height: 90.5%;
+        background: #fff;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .encabezadoProductos {
+        position: relative;
+        background: #fff;
+        height: 14.5%;
+        width: 92.6%;
+        margin: 0;
+        padding: 1em;
+        box-shadow: 0 0 35px #00000095;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    
+    .contenedorBuscadorProductos {
+        display: flex;
+        width: 100%;
+        justify-content:space-around;
+    }
+    
+    .inputSearch {
+        width: 70%;
+        background: none;
+        font-size: 20px;
+        border-radius: 50px;
+        padding: 0.5em;
+        border: solid 3px;
+    }
+    
+    .contendorFechaNotificacion {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        width: -500px;
+    }
+
+    .contendorFechaNotificacion span:first-child{
+        display: none;
+        width: 0px;
+        height: opx;
+    }
+    
+    .contenedorBotonesFiltro {
+        display: flex;
+        padding-top: 1.2em;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    
+    .botonesFiltro {
+        display: flex;
+        flex-direction: column;
+        background: #3A3C4C;
+        border-radius: 20px;
+        padding: 0.5em 1em;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5%;
+        width: 50%;
+    }
+    
+    .titulosFiltro {
+        font-size: 18px;
+        color: #fff;
+        width: fit-content;
+        font-weight: 600;
+    }
+    
+    .contenedorOpciobes {
+        font-size: 15px;
+        background: none;
+        color: #fff;
+    }
+    
+    .opcionesFiltro {
+        background: #3A3C4C;
+    }
+    
+    .contenedorProductos {
+        overflow: auto;
+        height: 77.6%;
+        border-bottom-left-radius: 0px;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 2em;
+        display: flex;
+        flex-wrap:unset;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .cardProducto {
+        border-radius: 35px;
+        display: flex;
+        background: #A7ABD0;
+        width: 95%;
+        height: 30%;
+        box-shadow: 0px 0px 15px #00000042;
+        margin: 0 auto;
+    }
+    
+    .contenedorImagenProducto {
+        height: 100%;
+        width: 35%;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 35px;
+        overflow:hidden;
+        position: relative;
+    }
+
+    .contenedorInfoProducto {
+        display: flex;
+        padding: 2em 1em;
+        align-items: center;
+        width: 70%;
+        justify-content:space-around;
+    }
+    
+    .nombreProducto {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 17px;
+        color: #fff;
+    }
+    
+    .precioProducto {
+        color: #fff;
+    }
+    
+    .botonEditarProducto:hover {
+        background: #727bbb;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .contenedorIconoEditar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .iconoEditar {
+        width: 30px;
+    }
+
+    /* Clientes */
+
+    .clientes {
+        position: fixed;
+        z-index: 99;
+        height: 90%;
+        background: #fff;
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedorClientes {
+        overflow: auto;
+        position: relative;
+        top: 0px;
+        height: 100%;
+        border-bottom-left-radius: 0;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
+    .contenedorCards {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cardCliente {
+        background: #D9D9D9;
+        border-radius: 35px;
+        display: flex;
+        padding: 1em 3em;
+        justify-content:unset;
+        width: 75%;
+        gap: 10px;
+    }
+    
+    .cardCliente.filtro{
+        display: none;
+    }
+    
+    .contenedorImagenCliente {
+        position: absolute;
+        left: 1.5em;
+        width: 80px;   
+        height: 88px;
+        overflow: hidden;
+        border-radius: 0;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+    
+    .contenedorImagenCliente img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: center; 
+    }
+    
+    
+    .contenedorInfoCliente {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left:45px;
+    }
+    
+    .nombreCliente {
+        font-size: 15px;
+        font-weight: 800;
+        color: #323338;
+    }
+    
+    .iconoEditarCliente {
+        width: 20px;
+    }
+
+    /* configuracion */
+
+    .contenedorTotalConfiguracion {
+        height: 78%;
+        border-bottom-left-radius: 30px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2em;
+        display: flex;
+    }
+    
+    .contenedorPrincipalConfiguracion {
+        border-radius: 40px;
+    }
+    
+    .botonesEncabezadoConfiguracion {
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        margin: 0 auto;
+        padding-top: 1em;
+        width: 90%;
+        overflow: auto;
+    }
+    
+    .botonesConfiguraciones {
+        background: #D9D9D9;
+        border-radius: 50px;
+        padding: 0.5em 0.2em; 
+        font-size: 14px;
+        font-weight: 800;
+        color: #3A3C4C;
+    }
+    
+    .botonesConfiguraciones:hover {
+        background: #8C8C8C;
+    }
+    
+    .contenedorConfiguracion {
+        background: #696E96;
+        width: 90%;
+        height: 75%;
+        margin: 1em auto 0 auto;
+        border-radius: 50px;
+        overflow:unset;
+        position: relative;
+    }
+    
+    .contenedorInputBotones {
+        padding: 2em;
+    }
+    
+    .inputNombreCategoria {
+        font-size: 20px;
+        color: #fff;
+        background: none;
+        border-bottom: solid 3px #fff;
+        width: 100%;
+        padding: 0 0 0.5em 0;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+    
+    .inputNombreCategoria::placeholder{
+        color: #fff;
+    }
+    
+    .inputNombreCategoria:focus{
+        outline-style: none;
+    }
+    
+    .contenedorBotonesCrearAyuda {
+        display: flex;
+        gap: 0;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+    
+    .contenedorCategoriasCreadas {
+        padding: 1.5em;
+        position: relative;
+        height: 50%;
+    }
+    
+    .textoCategorias {
+        text-align: center;
+    }
+    
+    .contenedorCategoriasBoton {
+        position: relative;
+        border: solid 3px #fff;
+        border-radius: 20px;
+        margin-top: 1em;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 1em;
+        height: 50%;
+    }
+    
+    .botonCategoria {
+        background: #D9D9D9;
+        padding: 0.5em;
+        border-radius: 30px;
+        display: flex;
+        gap: 10px;
+        font-size: 22px;
+        align-items: center;
+        color: #3A3C4C;
+        height: 50px;
+    }
+    
+    .iconoEliminarCategoria {
+        width: 20px;
+    }
+
+}
