@@ -1,11 +1,11 @@
 async function datosJson (lista) {
-    const conexion = await fetch(`http://localhost:3001/${lista}`);
+    const conexion = await fetch(`https://fake-api-alura-week.vercel.app/${lista}`);
     const conexionConvertida = conexion.json();
     return conexionConvertida;
 }
 
 async function postProductos (id,titulo,precio,categoria,genero,existencia,imagen) {
-    const conexionPost = await fetch("http://localhost:3001/productos", {
+    const conexionPost = await fetch("https://fake-api-alura-week.vercel.app/productos", {
         method:"POST",
         headers:{"Content-type":"application-json"},
         body:JSON.stringify({
@@ -25,13 +25,13 @@ async function postProductos (id,titulo,precio,categoria,genero,existencia,image
 }
 
 async function postClientes (id, nombre, telefono, correo, fechaNacimiento, imagen) {
-    const conexionPost = await fetch("http://localhost:3001/clientes", {
+    const conexionPost = await fetch("https://fake-api-alura-week.vercel.app/clientes", {
         method:"POST",
         headers:{"Content-type":"application-json"},
         body:JSON.stringify({
             id:id,
             nombre:nombre,
-            telefono:telefono, 
+            telefono:telefono,
             correo:correo,
             fechaNacimiento:fechaNacimiento,
             imagen:imagen
@@ -44,7 +44,7 @@ async function postClientes (id, nombre, telefono, correo, fechaNacimiento, imag
 }
 
 async function postEmpleados (id, nombre, telefono, correo, domicilio, fechaNacimiento, imagen) {
-    const conexionPost = await fetch("http://localhost:3001/empleados", {
+    const conexionPost = await fetch("https://fake-api-alura-week.vercel.app/empleados", {
         method:"POST",
         headers:{"Content-type":"application-json"},
         body:JSON.stringify({
@@ -64,7 +64,7 @@ async function postEmpleados (id, nombre, telefono, correo, domicilio, fechaNaci
 }
 
 async function postCategorias (id, nombreCategoria) {
-    const conexionPost = await fetch("http://localhost:3001/categorias", {
+    const conexionPost = await fetch("https://fake-api-alura-week.vercel.app/categorias", {
         method:"POST",
         headers:{"Content-type":"application-json"},
         body:JSON.stringify({
@@ -80,7 +80,7 @@ async function postCategorias (id, nombreCategoria) {
 
 async function putProductos (id, nombre, precio, categoria, genero, existencia, imagen) {
     try {
-        const nuevosDatos = await fetch(`http://localhost:3001/productos/${id}`, {
+        const nuevosDatos = await fetch(`https://fake-api-alura-week.vercel.app/productos/${id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -100,7 +100,7 @@ async function putProductos (id, nombre, precio, categoria, genero, existencia, 
 
 async function putClientes () {
     try{
-        const nuevosDatos = await fetch(`http://localhost:3001/clientes/${id}`, {
+        const nuevosDatos = await fetch(`https://fake-api-alura-week.vercel.app/clientes/${id}`, {
             method: 'PUT',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({
@@ -119,7 +119,7 @@ async function putClientes () {
 
 async function putEmpleados () {
     try{
-        const nuevosDatos = await fetch(`http://localhost:3001/empleados/${id}`, {
+        const nuevosDatos = await fetch(`https://fake-api-alura-week.vercel.app/empleados/${id}`, {
             method: 'PUT',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({
@@ -140,7 +140,7 @@ async function putEmpleados () {
 async function eliminarProducto(productId) {
   
     try {
-      const response = await fetch(`http://localhost:3001/productos/${productId}`, {
+      const response = await fetch(`https://fake-api-alura-week.vercel.app/productos/${productId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ async function eliminarCategria (id) {
 
     try {
 
-        const response = await fetch(`http://localhost:3001/categorias/${id}`, {
+        const response = await fetch(`https://fake-api-alura-week.vercel.app/categorias/${id}`, {
             method: 'DELETE',
             headers: {'content-Type' : 'appclication/json'}
         });
