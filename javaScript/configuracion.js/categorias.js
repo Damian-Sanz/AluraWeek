@@ -51,6 +51,7 @@ async function eliminarCategoria() {
         let id = categoria.name;
         categoria.addEventListener('click', () => {
             conexionJson.eliminarCategria(id);
+            location.reload();
         })
     })
 }
@@ -69,7 +70,7 @@ async function crearNuevaCategoria() {
     }
 
     const id = generarIDUnico(idExistentes);
-    const nombre = document.querySelector('.inputNombreCategoria').value;
+    const nombre = document.querySelector('#newCat').value;
 
     await conexionJson.postCategorias(id, nombre)
 }
