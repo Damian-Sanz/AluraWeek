@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/popUps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Productos</title>
+
+</head>
+
+<body>
+
+    <div class="contenedor-fondoDesenfocado-editarProducto">
+
+        <div class="contenedor2-popUp-EditarProducto">
+
+            <div class="contenedorEditarImg">
+                <img class="imagenProducto edit" id="imagenProductoEdit" src="" alt="imagen del producto" data-imagenPUT>
+                <fieldset class="contenedorFormEditarImagen">
+                    <label class="labelCambiarImagen" for="urlImagen">Cambiar imagen</label>
+                    <input class="inputUrl" type="url" placeholder="URL de la nueva imagen..." id="urlImagen">
+                    <input type="button" value="Aplicar" class="inputAplicarNuevaImg">
+                </fieldset>
+            </div>
+
+            <div class="contenedorEditarDatosProducto">
+
+                <h2 class="h2DatosProducto">Datos del producto</h2>
+
+                <form class="formNuevosDatosProducto">
+
+                    <span class="contenedorSpanInfo-aEditar">
+                        <div class="contenedorInfo-aEditar">
+                            <p class="parrafoInfo-aEditar">Nombre actual:</p>
+                            <div class="contenedorPrecio">
+                                <p class="precioProductoActual" id="newName"></p>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Ingrese el nuevo nombre..." class="inputNuevosValores" id="newNameInput">
+                    </span>
+
+                    <span class="contenedorSpanInfo-aEditar">
+                        <div class="contenedorInfo-aEditar">
+                            <p class="parrafoInfo-aEditar">Precio actual:</p>
+                            <div class="contenedorPrecio">
+                                <p>$</p>
+                                <p class="precioProductoActual" id="newPRECIO"></p>
+                                <p>mxn</p>
+                            </div>
+                        </div>
+                        <input type="number" placeholder="Ingrese el nuevo precio..." class="inputNuevosValores" id="newPrecio">
+                    </span>
+
+                    <span class="contenedorSpanInfo-aEditar">
+                        <div class="contenedorInfo-aEditar">
+                            <p class="parrafoInfo-aEditar">Existencia actual:</p>
+                            <div class="contenedorPrecio">
+                                <p class="precioProductoActual" id="existenciaActual"></p>
+                                <p>pz</p>
+                            </div>
+                        </div>
+                        <input type="number" placeholder="Ingrese la catidad correcta..." class="inputNuevosValores" id="newCantidad">
+                    </span>
+                    
+                    <span class="contenedorSpanSelectivos">
+                        <label for="opcionesCategoriasEditProducto">Categoria</label>
+                        <select name="" id="opcionesCategoriasEditProducto" class="selector-editProducto">
+                        </select>
+                    </span>
+
+                    <span class="contenedorSpanSelectivos">
+                        <label for="generoEditProducto">Genero</label>
+                        <select name="" id="generoEditProducto" class="selector-editProducto">
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                            <option>Ambos</option>
+                        </select>
+                    </span>
+
+                    <div class="contenedorBotonesGuardarCancelar">
+                        <input type="submit" value="Guardar" class="botonGuardar">
+
+                        <button class="botonCancelar">Cancelar</button>
+                    </div>
+
+                </form>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contenedor-fondoDesenfocado-eliminarProducto display" id="ventanaEliminarProducto">
+        <div class="divCentralizado">
+            <img src="../img/fondoPopUp.png" alt="fondoPopUp" class="imgFondoAdvertencia">
+            <div class="contenedorTextoAdvertencia">
+                <div class="contenedorTA2">
+                    <button class="botonCancelarEliminacion" id="btnCanelarDelete">X</button>
+                    <span class="primeraLineaAdvertencia">Se eliminara</span>
+                    <p class="segundaLineaAdvertencia">Permanentemente</p>
+                    <button class="btoonAceptarAdvertencia" id="btnEliminarProducto">aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="tituloAncla" id="tituloForJS">productos</p>
+
+    <header class="encabezadoTipoBarra">
+
+        <div class="contenedorEncabezado">
+
+            <div class="contenedorImgPerfil">
+                <img src="../img/perfilPrueba.jpg" alt="imagen del Usuario" class="imagenPerfil">
+            </div>
+
+            <nav class="contenedorNav">
+
+                <a class="contenedorItemsNavegacion" href="index.html">
+                    <img src="../img/iconos/dashboard.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Dashboard</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="productos.html">
+                    <img src="../img/iconos/productos.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion" id="pestañaProductos">productos</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="cliente.html">
+                    <img src="../img/iconos/clientes.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">clientes</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="configuracion.html">
+                    <img src="../img/iconos/configuracion.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Configuraciones</span>
+                </a>
+
+                <div class="contenedorCerrarSesion">
+                    <img class="iconoCerrarSesion" src="../img/iconos/cerrarSesion.png" alt="">
+                    <span class="textoCerrarSesion">Cerrar Sesion</span>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="productos">
+
+            <div class="encabezadoProductos">
+
+                <div class="contenedorBuscadorProductos">
+
+                    <input type="search" placeholder="Buscar producto..." id="campoBusqueda" class="inputSearch">
+
+                    <div class="contendorFechaNotificacion">
+
+                        <span>Martes 30 de Abril del 2024</span>
+
+                        <a href="">
+                            <img src="../img/iconos/notificacion.png" alt="" class="iconoNotificacion">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="contenedorBotonesFiltro">
+
+                    <div class="botonesFiltro">
+                        <legend class="titulosFiltro">Categoria</legend>
+                        <select class="contenedorOpciobes" id="opcionesCategorias" data-filtroCategoria>
+                            <option class="opcionesFiltro" data-category="Todos">Todos</option>
+                        </select>
+                    </div>
+
+                    <div class="botonesFiltro">
+                        <legend class="titulosFiltro">Existencia</legend>
+                        <select class="contenedorOpciobes" id="opcionesExistencia">
+                            <option class="opcionesFiltro" data-existencia="Todos">Todos</option>
+                            <option class="opcionesFiltro" data-existencia="Con existencia">Con existencia</option>
+                            <option class="opcionesFiltro" data-existencia="Sin existencia">Sin existencia</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contenedorProductos" data-listaProductos>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="./javaScript/productos/renderizadoProductos.js"></script>
+
+</body>
+
+</html>

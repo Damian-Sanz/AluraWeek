@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Clientes</title>
+
+</head>
+
+<body>
+
+    <p class="tituloAncla" id="tituloForJS">clientes</p>
+
+    <header class="encabezadoTipoBarra">
+
+        <div class="contenedorEncabezado">
+
+            <div class="contenedorImgPerfil">
+                <img src="../img/perfilPrueba.jpg" alt="imagen del Usuario" class="imagenPerfil">
+            </div>
+
+            <nav class="contenedorNav">
+
+                <a class="contenedorItemsNavegacion" href="index.html">
+                    <img src="../img/iconos/dashboard.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Dashboard</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="productos.html">
+                    <img src="../img/iconos/productos.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Productos</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="">
+                    <img src="../img/iconos/clientes.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Clientes</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="configuracion.html">
+                    <img src="../img/iconos/configuracion.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Configuraciones</span>
+                </a>
+
+                <div class="contenedorCerrarSesion">
+                    <img class="iconoCerrarSesion" src="../img/iconos/cerrarSesion.png" alt="">
+                    <span class="textoCerrarSesion">Cerrar Sesion</span>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="clientes">
+
+            <div class="encabezadoProductos">
+
+                <div class="contenedorBuscadorProductos">
+
+                    <input type="search" placeholder="Buscar cliente..." class="inputSearch">
+
+                    <div class="contendorFechaNotificacion">
+
+                        <span>Martes 30 de Abril del 2024</span>
+
+                        <a href="">
+                            <img src="../img/iconos/notificacion.png" alt="" class="iconoNotificacion">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contenedorClientes">
+
+                <ul class="contenedorCards" data-listaClientes>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="./javaScript/clientes/rendeeizadoClientes.js"></script>
+    
+</body>
+
+</html>

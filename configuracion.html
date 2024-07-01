@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Configuraciones</title>
+
+</head>
+
+<body>
+
+    <header class="encabezadoTipoBarra">
+
+        <div class="contenedorEncabezado">
+
+            <div class="contenedorImgPerfil">
+                <img src="../img/perfilPrueba.jpg" alt="imagen del Usuario" class="imagenPerfil">
+            </div>
+
+            <nav class="contenedorNav">
+
+                <a class="contenedorItemsNavegacion" href="index.html">
+                    <img src="../img/iconos/dashboard.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Dashboard</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="productos.html">
+                    <img src="../img/iconos/productos.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Productos</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="cliente.html">
+                    <img src="../img/iconos/clientes.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Clientes</span>
+                </a>
+                <a class="contenedorItemsNavegacion" href="configuracion.html">
+                    <img src="../img/iconos/configuracion.png" alt="" class="iconoNavegacion">
+                    <span class="spanNavegacion">Configuraciones</span>
+                </a>
+
+                <div class="contenedorCerrarSesion">
+                    <img class="iconoCerrarSesion" src="../img/iconos/cerrarSesion.png" alt="">
+                    <span class="textoCerrarSesion">Cerrar Sesion</span>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="clientes">
+
+            <div class="encabezadoConfiguraciones">
+
+                <div class="contenedorBuscadorProductos">
+
+                    <span class="inputSearch">Configuraciones</span>
+
+                    <div class="contendorFechaNotificacion">
+
+                        <span>Martes 30 de Abril del 2024</span>
+
+                        <a href="">
+                            <img src="../img/iconos/notificacion.png" alt="" class="iconoNotificacion">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contenedorTotalConfiguracion">
+
+                <div class="contenedorPrincipalConfiguracion">
+                    <div class="botonesEncabezadoConfiguracion">
+                        <button class="botonesConfiguraciones">
+                            <span class="textoBotonesConfiguracion">Registrar Categoria</span>
+                        </button>
+                        <button class="botonesConfiguraciones">
+                            <span class="textoBotonesConfiguracion">Registrar Cargo</span>
+                        </button>
+                        <button class="botonesConfiguraciones">
+                            <span class="textoBotonesConfiguracion">Impresora</span>
+                        </button>
+                    </div>
+
+                    <div class="contenedorConfiguracion">
+                        <fieldset class="contenedorInputBotones">
+                            <input class="inputNombreCategoria" type="text" placeholder="Nombre de la categoria" required id="newCat">
+                            <div class="contenedorBotonesCrearAyuda">
+                                <button class="botonCrear">
+                                    <span class="spanBotonCrear">Crear</span>
+                                    <img src="../img/iconos/iconoSubmit.png" alt="" class="iconosBotonesCrearAyuda">
+                                </button>
+                                <button class="botonAyuda">
+                                    <span class="spanBotonAyuda">Ayuda</span>
+                                    <img src="../img/iconos/iconoIncognita.png" alt="" class="iconosBotonesCrearAyuda">
+                                </button>
+                            </div>
+                        </fieldset>
+                        <div class="contenedorCategoriasCreadas">
+                            <legend class="textoCategorias">Todas las categorias</legend>
+                            <div class="contenedorCategoriasBoton" data-listaCategoria>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./javaScript/configuracion.js/categorias.js" type="module"></script>
+    <script src="./javaScript/configuracion.js/peticionesConfig.js" type="module"></script>
+
+</body>
+
+</html>
