@@ -26,10 +26,10 @@ function crearCardProducto(id, titulo, precio, categoria, existencia, imagen) {
         </div>
         <div class="contenedorIconoEditar">
             <button class="botonEditarProducto" id="iconoEditar" name="${id}">
-                <img src="../img/iconos/editar.png" alt="" class="iconoEditar">
+                <img src="./img/iconos/editar.png" alt="" class="iconoEditar">
             </button>
             <button class="botonEditarProducto" id="iconoEliminarProducto" name="${id}">
-                <img src="../img/iconos/iconoEliminarBlanco.png" class="iconoEditar">
+                <img src="./img/iconos/iconoEliminarBlanco.png" class="iconoEditar">
             </button>
         </div>
     </div>
