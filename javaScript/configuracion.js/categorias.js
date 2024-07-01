@@ -33,7 +33,7 @@ function crearCardCategoria(id, nombreCategoria) {
     cardCategoria.className = "botonCategoria";
     cardCategoria.innerHTML = `
     <span class="nombreCategoria">${nombreCategoria}</span>
-    <img src="../img/iconos/iconoBoteEliminar.png" alt="" class="iconoEliminarCategoria" name="${id}">
+    <img src="./img/iconos/iconoBoteEliminar.png" alt="" class="iconoEliminarCategoria" name="${id}">
     `;
     return cardCategoria;
 }
