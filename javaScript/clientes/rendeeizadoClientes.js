@@ -16,7 +16,7 @@ function crearCardCliente(id, nombre, telefono, correo, imagen) {
         <p class="datosCliente">${telefono}</p>
     </div>
     <div class="contenedorEditarCliente" name="${id}">
-        <img src="../img/iconos/iconoEliminarBlanco.png" alt="icono editar" class="iconoEditarCliente">
+        <img src="./img/iconos/iconoEliminarBlanco.png" alt="icono editar" class="iconoEditarCliente">
     </div>
     `;
     return cardCliente;
