@@ -54,6 +54,8 @@ async function editarProducto () {
                     let datosNuevos = conexionJson.putProductos(id, nombreProducto, precio, categoriaSeleccionada, generoSeleccionado, nuevaExistencia, nuevaImagen);
                     datosNuevos;
 
+                    location.reload();
+
                 });
             });
             ventanaEditor.classList.add('select');
@@ -75,6 +77,7 @@ async function eliminarProducto () {
         const aceptarDelete = () => {
             let id = producto.name;
             conexionJson.eliminarProducto(id);
+            location.reload();
         };
 
         producto.addEventListener('click', () => {
