@@ -13,6 +13,7 @@ async function editarProducto () {
     let iconoEditar = document.querySelectorAll(`#iconoEditar`);
     let ventanaEditor = document.querySelector('.contenedor-fondoDesenfocado-editarProducto');
     const botonAplicar = document.querySelector('.inputAplicarNuevaImg');
+    const botonGuardar = document.querySelector('.botonGuardar');
     const datosListaJson = await conexionJson.datosJson("productos");
     const categoriaJson = await conexionJson.datosJson("categorias")
     let categoriaSelect = document.querySelector('#opcionesCategoriasEditProducto');
@@ -57,7 +58,37 @@ async function editarProducto () {
                     location.reload();
 
                 });
+
+                botonGuardar.addEventListener('click', async (event) => {
+                    event.preventDefault();
+                    let nombreProducto = document.querySelector('#newNameInput').value;
+                    let precio = document.querySelector('#newPrecio').value;
+                    let categoriaSeleccionada = categoriaSelect.value;
+                    let generoSeleccionado = generoSelect.value;
+                    let nuevaExistencia = document.querySelector('#newCantidad').value;
+                    let nuevaImagen = document.querySelector('#urlImagen').value;
+
+                    if (nombreProducto.length <= 0) {
+                        nombreProducto = document.querySelector('#newName').textContent;
+                    }
+                    if(precio.length <= 0){
+                        precio = document.querySelector('#newPRECIO').textContent;
+                    }
+                    if (nuevaExistencia.length <= 0) {
+                        nuevaExistencia = document.querySelector('#existenciaActual').textContent;
+                    }
+                    if (nuevaImagen.length <= 0) {
+                        nuevaImagen = document.querySelector('[data-imagenPUT]').src;
+                    }
+
+                    let datosNuevos = conexionJson.putProductos(id, nombreProducto, precio, categoriaSeleccionada, generoSeleccionado, nuevaExistencia, nuevaImagen);
+                    datosNuevos;
+
+                    location.reload();
+                })
+
             });
+            
             ventanaEditor.classList.add('select');
         });
     });
